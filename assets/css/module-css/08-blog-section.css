@@ -1,0 +1,1010 @@
+/*** 
+=============================================
+    Blog Style1 Css
+=============================================
+***/
+.blog-style1 {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    padding: 150px 0 120px;
+    z-index: 10;
+}
+
+.blog-style1__shape1 {
+    position: absolute;
+    left: 5%;
+    bottom: 150px;
+    z-index: -1;
+}
+
+
+.blog-style1__text-box {
+    position: relative;
+    display: block;
+    background: #E04F44;
+    border-radius: 10px;
+    padding: 40px 50px 35px;
+}
+
+.blog-style1__text-box.bg2 {
+    background: #0C828C;
+}
+
+.blog-style1__text-box.margin-b-30 {
+    margin-bottom: 30px;
+}
+
+.blog-style1__text-box .category {
+    position: relative;
+    display: inline-block;
+    background: var(--thm-base);
+    border-radius: 5px;
+    padding: 8px 20px 6px;
+}
+
+.blog-style1__text-box .category h6 {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.blog-style1__text-box .title-box {
+    position: relative;
+    display: block;
+    margin-top: 31px;
+}
+
+.blog-style1__text-box .title-box h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+}
+
+.blog-style1__text-box .title-box h3 a {
+    color: #ffffff;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.blog-style1__text-box .title-box h3 a:hover {
+    color: var(--thm-base);
+}
+
+
+.blog-style1__text-box .meta-box {
+    position: relative;
+    display: block;
+    padding-top: 10px;
+}
+
+.blog-style1__text-box .meta-box .meta-info {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.blog-style1__text-box .meta-box .meta-info li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+.blog-style1__text-box .meta-box .meta-info li:last-child {
+    margin-right: 0;
+}
+
+.blog-style1__text-box .meta-box .meta-info li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-style1__text-box .meta-box .meta-info li a span {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    display: inline-block;
+    padding-right: 9px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+.single-blog-style1 {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.single-blog-style1 .img-holder {
+    position: relative;
+    display: block;
+}
+
+.single-blog-style1 .img-holder .inner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.single-blog-style1 .img-holder .inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, #202020 100%);
+    z-index: 2;
+}
+
+.single-blog-style1 .img-holder .inner img {
+    width: 100%;
+    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.single-blog-style1:hover .img-holder .inner img {
+    transform: scale(1.02) rotate(1deg);
+}
+
+.single-blog-style1 .img-holder .blog-style1__text-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 3;
+}
+
+
+
+/*** 
+=============================================
+   Blog Style2 Css
+=============================================
+***/
+.blog-style2 {
+    position: relative;
+    display: block;
+    background-color: #FFFFFF;
+    padding: 150px 0 110px;
+    z-index: 10;
+}
+
+.blog-style2 .sec-title .sub-title.center {
+    padding-top: 0;
+}
+
+
+.single-blog-style2 {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-blog-style2:hover {
+    transform: translateY(-10px);
+}
+
+.single-blog-style2 .img-holder {
+    position: relative;
+    display: block;
+}
+
+.single-blog-style2 .img-holder .inner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.single-blog-style2 .img-holder .inner img {
+    width: 100%;
+}
+
+.single-blog-style2 .img-holder .inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--thm-black);
+    opacity: 0;
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    z-index: 1;
+}
+
+.single-blog-style2:hover .img-holder .inner::before {
+    opacity: 0.20;
+}
+
+.single-blog-style2:hover .img-holder .inner img {
+    transform: scale(1.05) rotate(0deg);
+}
+
+.single-blog-style2 .img-holder .category {
+    position: absolute;
+    left: 45px;
+    bottom: -20px;
+    background: #F2B516;
+    border-radius: 5px;
+    padding: 8px 20px 6px;
+    z-index: 2;
+}
+
+.single-blog-style2 .img-holder .category h6 {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+
+.single-blog-style2 .title-holder {
+    position: relative;
+    display: block;
+    background: #F5F5F5;
+    border-radius: 0px 0px 10px 10px;
+    padding: 58px 45px 44px;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.single-blog-style2:hover .title-holder {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px 10px rgba(0, 0, 0, 0.05);
+}
+
+.single-blog-style2 .title-holder__shape1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.single-blog-style2:hover .title-holder__shape1 {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
+
+.single-blog-style2 .title-holder .meta-box {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.single-blog-style2 .title-holder .meta-box .meta-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.single-blog-style2 .title-holder .meta-box .meta-info li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.single-blog-style2 .title-holder .meta-box .meta-info li a {
+    color: #515151;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-blog-style2 .title-holder .meta-box .meta-info li a:hover {
+    color: var(--thm-base);
+}
+
+.single-blog-style2 .title-holder .meta-box .meta-info li+li {
+    padding-left: 20px;
+}
+
+.single-blog-style2 .title-holder .meta-box .meta-info li span {
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    color: #E04F44;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+
+.single-blog-style2 .title-holder .title-box {
+    position: relative;
+    display: block;
+}
+
+.single-blog-style2 .title-holder .title-box h3 {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+}
+
+.single-blog-style2 .title-holder .title-box h3 a {
+    color: var(--thm-black);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-blog-style2 .title-holder .title-box h3 a:hover {
+    color: var(--thm-base);
+}
+
+
+
+/*** 
+=============================================
+    Blog Details Page Css
+=============================================
+***/
+.blog-details-page {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    padding: 150px 0 150px;
+    z-index: 10;
+}
+
+.blog-details-content {
+    position: relative;
+    display: block;
+}
+
+.blog-details-img-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.blog-details-img-box img {
+    width: 100%;
+}
+
+.blog-details-img-box .category {
+    position: absolute;
+    background-color: var(--thm-base);
+    left: 50px;
+    bottom: 50px;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+.blog-details-img-box .category h6 {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+
+
+.blog-details-text-box {
+    position: relative;
+    display: block;
+    border: 1px solid #D9D9D9;
+    border-radius: 0px 0px 10px 10px;
+    padding: 48px 60px 70px;
+}
+
+.blog-details-text-box .meta-box {
+    position: relative;
+    display: block;
+}
+
+.blog-details-text-box .meta-box .meta-info {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.blog-details-text-box .meta-box .meta-info li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+.blog-details-text-box .meta-box .meta-info li:last-child {
+    margin-right: 0;
+}
+
+.blog-details-text-box .meta-box .meta-info li a {
+    color: var(--thm-black);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-details-text-box .meta-box .meta-info li a span {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    display: inline-block;
+    padding-right: 9px;
+    color: var(--thm-primary);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+.blog-details-text-box h2 {
+    font-size: 32px;
+    line-height: 43px;
+    text-transform: capitalize;
+    padding-top: 25px;
+    padding-bottom: 32px;
+}
+
+.blog-details-text-box p {
+    margin: 0;
+}
+
+
+
+.blog-details-quote-box {
+    position: relative;
+    display: block;
+    background: rgba(242, 181, 22, 0.06);
+    border-radius: 10px;
+    padding: 38px 35px 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.blog-details-quote-box .blog-details-quote-box__inner {
+    position: relative;
+    display: block;
+    padding-left: 60px;
+}
+
+.blog-details-quote-box .blog-details-quote-box__inner .icon {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.blog-details-quote-box .blog-details-quote-box__inner .icon span {
+    font-size: 35px;
+    line-height: 35px;
+    color: #0C828C;
+}
+
+.blog-details-quote-box .blog-details-quote-box__inner .text {}
+
+.blog-details-quote-box .blog-details-quote-box__inner .text p {
+    color: #202020;
+}
+
+
+
+
+.post-tag-share-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.post-tag-share-box .tag-box {
+    position: relative;
+    display: block;
+}
+
+.post-tag-share-box .tag-box ul {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.post-tag-share-box .tag-box ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.post-tag-share-box .tag-box ul li:last-child {
+    margin-right: 0;
+}
+
+.post-tag-share-box .tag-box ul li a {
+    position: relative;
+    display: inline-block;
+    background: #F5F5F5;
+    padding: 0 20px;
+    color: var(--thm-gray);
+    font-size: 13px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.post-tag-share-box .tag-box ul li a:hover {
+    color: #ffffff;
+    background-color: var(--thm-primary);
+}
+
+
+
+.post-tag-share-box .share-box {
+    position: relative;
+    display: block;
+}
+
+.post-tag-share-box .share-box .share-button a {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    background: var(--thm-primary);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+
+.post-tag-share-box .share-box .share-button a i {
+    position: relative;
+    display: inline-block;
+    padding-left: 7px;
+}
+
+
+
+
+
+/*** comments Box Css ***/
+.comment-box {
+    position: relative;
+    display: block;
+    padding-top: 62px;
+}
+
+.comment-box .inner-title {
+    position: relative;
+    display: block;
+    padding-bottom: 41px;
+}
+
+.comment-box .inner-title h2 {
+    font-size: 32px;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+.comment-box__inner {
+    position: relative;
+    display: block;
+}
+
+.comment-box .single-comment {
+    position: relative;
+    display: block;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 45px 45px 46px;
+    margin-bottom: 15px;
+}
+
+.comment-box .single-comment:last-child {
+    margin-bottom: 0;
+}
+
+.comment-box .single-comment-box {
+    position: relative;
+    display: block;
+    padding-left: 100px;
+}
+
+.comment-box .single-comment-box .img-holder {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 95px;
+    height: 95px;
+}
+
+.comment-box .single-comment-box .img-holder img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.comment-box .single-comment-box .text-holder {
+    position: relative;
+    display: block;
+    min-height: 95px;
+    padding-left: 30px;
+}
+
+.comment-box .single-comment-box .text-holder .reply-btn {
+    position: absolute;
+    top: 0px;
+    right: -45px;
+}
+
+.comment-box .single-comment-box .text-holder .reply-btn a {
+    position: relative;
+    display: inline-block;
+    padding: 7px 15px 7px;
+    background: rgba(242, 181, 22, 0.15);
+    border-radius: 5px;
+    color: var(--thm-black);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: var(--thm-font);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.comment-box .single-comment-box .text-holder .reply-btn a:hover {
+    color: var(--thm-base);
+}
+
+.comment-box .single-comment-box .text-holder .reply-btn a span {
+    position: relative;
+    display: inline-block;
+    color: #E04F44;
+    font-size: 18px;
+    top: 3px;
+    padding-right: 3px;
+}
+
+
+.comment-box .single-comment-box .text-holder .top {
+    position: relative;
+    display: block;
+}
+
+.comment-box .single-comment-box .text-holder .top h3 {
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+.comment-box .single-comment-box .text-holder .top h3 span {
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    color: var(--thm-gray);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.comment-box .single-comment-box .text-holder .text {
+    position: relative;
+    display: block;
+    padding-top: 22px;
+}
+
+.comment-box .single-comment-box .text-holder .text p {
+    line-height: 32px;
+}
+
+
+
+
+
+.reply-form-box {
+    position: relative;
+    display: block;
+    padding-top: 62px;
+}
+
+.reply-form-box .title {
+    position: relative;
+    display: block;
+    padding-bottom: 41px;
+}
+
+.reply-form-box .title h2 {
+    font-size: 32px;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+.reply-form-box #review-form {
+    position: relative;
+    display: block;
+}
+
+.reply-form-box form .input-box {
+    position: relative;
+    display: block;
+}
+
+.reply-form-box form input[type="text"],
+.reply-form-box form input[type="email"],
+.reply-form-box form textarea {
+    position: relative;
+    display: block;
+    background: #F5F5F5;
+    width: 100%;
+    height: 65px;
+    border: 0px solid #eeeeee;
+    color: #515151;
+    font-size: 17px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+.reply-form-box form textarea {
+    height: 150px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+
+.reply-form-box form button {}
+
+.reply-form-box form input[type="text"]:focus {
+    border-color: #11161e;
+}
+
+.reply-form-box form input[type="email"]:focus {
+    border-color: #11161e;
+}
+
+.reply-form-box form textarea:focus {
+    border-color: #11161e;
+}
+
+
+
+/*** 
+=============================================
+    Blog Page One Css
+=============================================
+***/
+.blog-page-one {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    padding: 150px 0 150px;
+    z-index: 10;
+}
+
+.blog-page-content {
+    position: relative;
+    display: block;
+}
+
+.single-blog-style3 {
+    position: relative;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.single-blog-style3 .img-holder {
+    position: relative;
+    display: block;
+}
+
+.single-blog-style3 .img-holder .inner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.single-blog-style3 .img-holder .inner img {
+    width: 100%;
+}
+
+.single-blog-style3 .img-holder .inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--thm-black);
+    opacity: 0;
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    z-index: 1;
+}
+
+.single-blog-style3:hover .img-holder .inner::before {
+    opacity: 0.50;
+}
+
+.single-blog-style3:hover .img-holder .inner img {
+    transform: scale(1.05) rotate(0deg);
+}
+
+.single-blog-style3 .img-holder .category {
+    position: absolute;
+    left: 45px;
+    bottom: 45px;
+    background: #F2B516;
+    border-radius: 5px;
+    padding: 8px 20px 6px;
+    z-index: 2;
+}
+
+.single-blog-style3 .img-holder .category h6 {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+.single-blog-style3 .title-holder {
+    position: relative;
+    display: block;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 57px 50px 60px;
+}
+
+.single-blog-style3 .title-holder .meta-box {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.single-blog-style3 .title-holder .meta-box .meta-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.single-blog-style3 .title-holder .meta-box .meta-info li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.single-blog-style3 .title-holder .meta-box .meta-info li a {
+    color: #515151;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-blog-style3 .title-holder .meta-box .meta-info li a:hover {
+    color: var(--thm-base);
+}
+
+.single-blog-style3 .title-holder .meta-box .meta-info li+li {
+    padding-left: 30px;
+}
+
+.single-blog-style3 .title-holder .meta-box .meta-info li span {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    color: #0C828C;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.single-blog-style3 .title-holder .title-box {
+    position: relative;
+    display: block;
+}
+
+.single-blog-style3 .title-holder .title-box h3 {
+    font-size: 32px;
+    line-height: 43px;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+
+.single-blog-style3 .title-holder .title-box h3 a {
+    color: var(--thm-black);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-blog-style3 .title-holder .title-box h3 a:hover {
+    color: var(--thm-base);
+}
+
+.single-blog-style3 .title-holder .title-box p {
+    margin: 0;
+}
+
+.single-blog-style3 .title-holder .title-box .btn-box {
+    position: relative;
+    display: block;
+    margin-top: 40px;
+    line-height: 0;
+}
+
+.single-blog-style3 .title-holder .title-box .btn-box .btn-one {
+    color: var(--thm-black);
+    line-height: 61px;
+    border-radius: 50px;
+}
+
+.single-blog-style3 .title-holder .title-box .btn-box .btn-one::before {
+    background-color: #E04F44;
+}
+
+.single-blog-style3 .title-holder .title-box .btn-box .btn-one::after {
+    background: #FFFFFF;
+    border: 1px solid #515151;
+    border-radius: 50px;
+}
+
+.single-blog-style3 .title-holder .title-box .btn-box .btn-one .txt i {
+    color: #E04F44;
+    font-size: 17px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.single-blog-style3 .title-holder .title-box .btn-box .btn-one:hover .txt i {
+    color: #ffffff;
+}
+
+.single-blog-style3 .title-holder .title-box .btn-box .btn-one:hover {
+    color: #ffffff;
+}
+
+
+
+/*** 
+=============================================
+    Blog Page Two Css
+=============================================
+***/
+.blog-page-two {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    padding: 150px 0 150px;
+    z-index: 10;
+}
